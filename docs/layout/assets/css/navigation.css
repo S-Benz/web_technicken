@@ -1,0 +1,41 @@
+header {
+    border-bottom: 1px solid black;
+    top: 0;
+}
+
+.navigation {
+    position: relative;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation__inner {
+    margin-top: 50px;
+}
+
+.navigation__inner__icon {
+    position: relative;
+    width: 30%;
+
+}
+
+.navigation__inner__container {
+    list-style: none;
+    padding: 0;
+    margin-left: 30%;
+}
+
+.navigation__inner__container__element {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 150px;
+    padding: 7px;
+    margin: 0 2px 2px 0;
+    text-align: center;
+}
+
+.navigation__inner__container__element:last-child {
+    margin: 0 0 2px 0;
+}

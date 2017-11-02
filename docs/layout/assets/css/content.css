@@ -1,0 +1,20 @@
+.content {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    clear: both;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+}
+
+.content__sidebar {
+    width: 30%;
+}
+
+.content__text {
+    width: 70%;
+    padding-left: 10px;
+}
