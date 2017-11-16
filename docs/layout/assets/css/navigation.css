@@ -28,7 +28,8 @@ header {
     position: relative;
     list-style: none;
     padding: 10px 0 0 0;
-    margin: 0;
+    margin: 0 0 0 auto;
+    width: 80%;
 }
 
 .navigation__inner__container__element {
@@ -51,15 +52,16 @@ header {
         width: 30%;
     }
 
+}
+
+@media screen and (min-width: 992px) {
     .navigation__inner__container {
         margin-left: 30%;
         width: 70%;
     }
 
-}
-
-@media screen and (min-width: 992px) {
     .navigation__inner__container__element {
         width: 20%;
     }
+
 }

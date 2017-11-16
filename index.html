@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="docs/layout/assets/css/main.css"/>
+    <script type="text/javascript" src="docs/layout/assets/js/sidebar.js"></script>
     <title>Title</title>
 </head>
 <body>
@@ -23,8 +24,13 @@
 </header>
 <main class="main-stage">
     <div class="content">
-        <section class="content__sidebar">
-            Ich bin eine Sidebar
+        <section class="content__sidebar" onclick="triggerSidebarFrame('[sidebarFrame]')">
+            <div class="content__sidebar__frame" sidebarFrame>
+                <div class="content__sidebar__element">FAQ</div>
+                <div class="content__sidebar__element">HELP</div>
+                <div class="content__sidebar__element">TEST</div>
+                <div class="content__sidebar__element">LUL</div>
+            </div>
         </section>
         <article class="content__text">
             Ich bin content
@@ -32,7 +38,7 @@
     </div>
 </main>
 <footer class="footer">
-    Ich bin ein Footer
+    &copy; Stefan Benz
 </footer>
 </body>
 </html>
