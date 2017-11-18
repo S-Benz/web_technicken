@@ -1,0 +1,30 @@
+header {
+    position: relative;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.header__title {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+.header__icon {
+    position: relative;
+    display: inline-block;
+    background-image: url('../img/main_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain ;
+    margin-left: 10px;
+    height: 100px;
+    width: 29%;
+}
+
+@media screen and (min-width: 768px) {
+    .header__title {
+        margin: 0;
+    }
+}

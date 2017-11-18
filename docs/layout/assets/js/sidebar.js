@@ -6,7 +6,7 @@ function setSidebar(){
 
     if(screen.width >= 768){
         sideBar.style.display = 'block';
-    }
+}
 }
 
 //Trigger sideBar when clicking on parent button
