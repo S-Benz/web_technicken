@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../docs/layout/assets/css/main.css"/>
+    <link rel="stylesheet" href="../docs/layout/assets/css/contact.css"/>
     <script type="text/javascript" src="../docs/layout/assets/js/sidebar.js"></script>
-    <script type="text/javascript" src="../docs/layout/assets/js/nav.js"></script>
+    <script type="text/javascript" src="../docs/layout/assets/js/pages/contact/contact-formula.js"></script>
     <title>Kontakt</title>
 </head>
 <body>
@@ -46,7 +47,23 @@
             </div>
         </section>
         <article class="content__text">
-            Ich bin content
+            <h2 class="content__text__heading">Kontaktaufname</h2>
+            <p>Um mit mir in Verbindung zu treten bitte ich sie darum das untenstehende Formular auszufüllen.</p>
+            <form name="contactForm" action="#" onsubmit="return validateForm()" class="contact-formula">
+                <div class="contact-formula__field">
+                    <span class="contact-formula__field__desc">Name:</span>
+                    <input name="name" type="text" required class="contact-formula__field__input">
+                </div>
+                <div class="contact-formula__field">
+                    <span class="contact-formula__field__desc">Vorname:</span>
+                    <input name="prename" type="text" required class="contact-formula__field__input">
+                </div>
+                <div class="contact-formula__field">
+                    <span class="contact-formula__field__desc">Email:</span>
+                    <input name="email" type="text"  required class="contact-formula__field__input">
+                </div>
+                <input type="submit">
+            </form>
         </article>
     </div>
 </main>

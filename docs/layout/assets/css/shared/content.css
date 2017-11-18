@@ -12,9 +12,9 @@
 .content__sidebar {
     width: 20%;
     height: 50px;
-    position: relative;
+    position: absolute;
     top: -55px;
-    background-image: url("../img/sidebar_menu.png");
+    background-image: url("../../img/sidebar_menu.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -45,8 +45,15 @@
 }
 
 .content__text {
-    width: 100%;
     padding: 15px 0 0 10px;
+}
+
+.content__text p {
+    margin: 0 0 7px 0;
+}
+
+.content__text__heading {
+    margin: 10px 0 15px 0;
 }
 
 @media screen and (min-width: 768px) {

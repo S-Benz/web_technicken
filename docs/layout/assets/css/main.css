@@ -1,7 +1,7 @@
-@import "navigation.css";
-@import "header.css";
-@import "content.css";
-@import "footer.css";
+@import "shared/navigation.css";
+@import "shared/header.css";
+@import "shared/content.css";
+@import "shared/footer.css";
 
 body {
     margin: 0;
