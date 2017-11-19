@@ -1,11 +1,17 @@
 function validateForm() {
     var form = document.forms["contactForm"];
-    var email = form["email"].value;
-    var emailRe = /([a-zA-Z0-9\.])+@([a-z\.])+/;
+    var name = form["name"].value;
+    var prename = form["prename"].value;
+    var nameRe = /([^a-zA-ZäüöÄÜÖ])/;
+    var res;
 
-    var match = email.match(emailRe);
+    if(nameRe.test(name) || nameRe.test(prename)){
+        res = false;
+        alert("Bitte keine Sonderzeichen im Namen/Vornamen verwenden!");
+    }else {
+        res = true;
+        alert("Kontaktformular wurde erfolgreich abgeschickt!");
+    }
 
-    console.log(match);
-
-    return true;
+    return res;
 }
