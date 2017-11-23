@@ -2,9 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FAQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../docs/layout/assets/css/main.css"/>
+    <script type="text/javascript" src="../docs/layout/assets/js/sidebar.js"></script>
+    <script type="text/javascript" src="../docs/layout/assets/js/footer.js"></script>
+    <title>Table</title>
 </head>
 <body>
-
+<header>
+    <div class="header__icon"></div>
+    <h1 class="header__title">FAQ</h1>
+</header>
+<nav>
+    <div class="nav__inner">
+        <div class="nav__inner__icon">
+        </div>
+        <ul class="nav__inner__container">
+            <li class="nav__inner__container__element">
+                <a class="nav__inner__container__element__link" href="../index.html">Home</a>
+            </li>
+            <li class="nav__inner__container__element">
+                <a class="nav__inner__container__element__link" href="#">Tabelle</a>
+            </li>
+            <li class="nav__inner__container__element">
+                <a class="nav__inner__container__element__link" href="pictures.html">Bilder</a>
+            </li>
+            <li class="nav__inner__container__element">
+                <a class="nav__inner__container__element__link" href="contact.html">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main class="main-stage">
+    <div class="content">
+        <section class="content__sidebar" onclick="triggerSidebarFrame('[sidebarFrame]')">
+            <div class="content__sidebar__frame" sidebarFrame>
+                <div class="content__sidebar__element">
+                    <a class="content__sidebar__element__link" href="faq.html">FAQ</a>
+                </div>
+                <div class="content__sidebar__element">
+                    <a class="content__sidebar__element__link" href="impressum.html">Impressum</a>
+                </div>
+            </div>
+        </section>
+        <article class="content__text">
+            Ich bin content
+        </article>
+    </div>
+</main>
+<footer>
+    &copy; Stefan Benz
+</footer>
 </body>
 </html>

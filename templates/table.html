@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../docs/layout/assets/css/main.css"/>
+    <link rel="stylesheet" href="../docs/layout/assets/css/pages/table/customer-table.css"/>
     <script type="text/javascript" src="../docs/layout/assets/js/sidebar.js"></script>
     <script type="text/javascript" src="../docs/layout/assets/js/footer.js"></script>
+    <script type="text/javascript" src="../docs/layout/assets/js/pages/table/customer-table-sort.js"></script>
     <title>Table</title>
 </head>
 <body>
@@ -46,7 +48,42 @@
             </div>
         </section>
         <article class="content__text">
-            Ich bin content
+            <h2 class="content__text__heading">Kunden die Katzen anbieten</h2>
+            <p>Siehe Tabelle</p>
+            <div class="customer-table__frame">
+                <button onclick="sortTable()">Sort</button>
+                <table class="customer-table" customerTable>
+                    <thead>
+                    <tr class="customer-table__row">
+                        <th>Name</th>
+                        <th>Katze(Rasse - Geschlecht - Alter)</th>
+                        <th>Emailadresse</th>
+                    </tr>
+                    </thead>
+                    <tbody sortBody>
+                    <tr class="customer-table__row">
+                        <td>Rudolf Monad</td>
+                        <td>Perser - M - 1 Jahr</td>
+                        <td>R.Monad@gmail.com</td>
+                    </tr>
+                    <tr class="customer-table__row">
+                        <td>Magnus Huber</td>
+                        <td>Bengalesisch - M - 1 Jahr</td>
+                        <td>m.huber@mail.com</td>
+                    </tr>
+                    <tr class="customer-table__row">
+                        <td>Thomas Mann</td>
+                        <td>Norwegische Waldkatze - W - 2 Jahre</td>
+                        <td>Mann.Th@gmx.de</td>
+                    </tr>
+                    <tr class="customer-table__row">
+                        <td>Annegret Lech</td>
+                        <td>Ocicat - W - 6 Monate</td>
+                        <td>Aneegret.lech@hotmail.com</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </article>
     </div>
 </main>
