@@ -1,0 +1,18 @@
+.faq {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.faq__element {
+    padding: 5px 0 30px 0;
+}
+
+.faq__element__q{
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.faq__element__a{
+    font-style: oblique;
+}
