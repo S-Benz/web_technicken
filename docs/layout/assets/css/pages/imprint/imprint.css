@@ -1,7 +1,22 @@
 .imprint {
+    margin-top: 25px;
+}
 
+.imprint p{
+    margin-bottom: 10px;
 }
 
 .imprint__element {
+    padding-bottom: 5px;
+}
 
+.imprint__element__heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.imprint__element__text {
+    font-size: 14px;
 }

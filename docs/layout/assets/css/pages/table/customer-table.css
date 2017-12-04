@@ -6,10 +6,13 @@
     margin-top: 10px;
 }
 
+.customer-table__button {
+    margin-top: 30px;
+}
+
 .customer-table__frame {
     overflow-x: auto;
     width: 100%;
-    padding-top: 50px;
 }
 
 .customer-table__row {
