@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../docs/layout/assets/css/main.css"/>
     <link rel="stylesheet" href="../docs/layout/assets/css/pictures.css"/>
+    <script type="text/javascript" src="../docs/layout/assets/js/navigation.js"></script>
     <script type="text/javascript" src="../docs/layout/assets/js/sidebar.js"></script>
     <script type="text/javascript" src="../docs/layout/assets/js/footer.js"></script>
     <title>Gallerie</title>
@@ -14,26 +15,26 @@
     <div class="header__icon"></div>
     <h1 class="header__title">Catarando</h1>
 </header>
-<nav>
-    <div class="nav__inner">
-        <div class="nav__inner__icon">
+<div class="nav__container">
+    <nav>
+        <div class="nav__inner">
+            <ul class="nav__inner__container">
+                <li class="nav__inner__container__element">
+                    <a class="nav__inner__container__element__link" href="../index.html">Home</a>
+                </li>
+                <li class="nav__inner__container__element">
+                    <a class="nav__inner__container__element__link" href="table.html">Verkäufer</a>
+                </li>
+                <li class="nav__inner__container__element">
+                    <a class="nav__inner__container__element__link" href="#">Gallerie</a>
+                </li>
+                <li class="nav__inner__container__element">
+                    <a class="nav__inner__container__element__link" href="contact.html">Kontakt</a>
+                </li>
+            </ul>
         </div>
-        <ul class="nav__inner__container">
-            <li class="nav__inner__container__element">
-                <a class="nav__inner__container__element__link" href="../index.html">Home</a>
-            </li>
-            <li class="nav__inner__container__element">
-                <a class="nav__inner__container__element__link" href="table.html">Verkäufer</a>
-            </li>
-            <li class="nav__inner__container__element">
-                <a class="nav__inner__container__element__link" href="#">Gallerie</a>
-            </li>
-            <li class="nav__inner__container__element">
-                <a class="nav__inner__container__element__link" href="contact.html">Kontakt</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    </nav>
+</div>
 <main class="main-stage">
     <div class="content">
         <section class="content__sidebar" onclick="triggerSidebarFrame('[sidebarFrame]')">
@@ -51,15 +52,18 @@
             <p>Hier finden sie eine Bildergallerie mit Katzen die über uns einen neuen Besitzer gefunden haben!</p>
             <div class="picture-gallery">
                 <figure class="picture-gallery__element__container">
-                    <img class="picture-gallery__element" src="../docs/layout/assets/img/ocicat_paul.jpg" alt="Ocicat Kater Paul (1 Jahr)">
+                    <img class="picture-gallery__element" src="../docs/layout/assets/img/ocicat_paul.jpg"
+                         alt="Ocicat Kater Paul (1 Jahr)">
                     <figcaption class="picture-gallery__element__desc">Ocicat Kater Paul (1 Jahr)</figcaption>
                 </figure>
                 <figure class="picture-gallery__element__container">
-                    <img class="picture-gallery__element" src="../docs/layout/assets/img/bengal_mira.jpg" alt="Bengal Katze Mira (8 Monate)">
+                    <img class="picture-gallery__element" src="../docs/layout/assets/img/bengal_mira.jpg"
+                         alt="Bengal Katze Mira (8 Monate)">
                     <figcaption class="picture-gallery__element__desc">Bengal Katze Mira (8 Monate)</figcaption>
                 </figure>
                 <figure class="picture-gallery__element__container">
-                    <img class="picture-gallery__element" src="../docs/layout/assets/img/siam_felix.jpg" alt="Siam Kater Felix (1 Jahr 4 Monate)">
+                    <img class="picture-gallery__element" src="../docs/layout/assets/img/siam_felix.jpg"
+                         alt="Siam Kater Felix (1 Jahr 4 Monate)">
                     <figcaption class="picture-gallery__element__desc">Siam Kater Felix (1 Jahr 4 Monate)</figcaption>
                 </figure>
             </div>

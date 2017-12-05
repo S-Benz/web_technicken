@@ -1,16 +1,16 @@
 nav {
     position: relative;
     max-width: 1200px;
-    width: 100%;
-    background-color: white;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid black;
-    z-index: 100;
 }
 
 .nav__inner {
     position: relative;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    border-bottom: 1px solid black;
 }
 
 .nav__inner__container {
