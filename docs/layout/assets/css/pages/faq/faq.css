@@ -16,3 +16,12 @@
 .faq__element__a{
     font-style: oblique;
 }
+
+.faq__element__a > a {
+    text-decoration: none;
+    color: gray;
+}
+
+.faq__element__a > a:hover {
+    color: black;
+}
