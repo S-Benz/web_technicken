@@ -15,7 +15,5 @@ function positionFooter() {
     if(diff > 0) {
         footer.style.bottom = "-" + diff + "px";
     }
-
-    console.log("Main: " + mainOffsetTop + "\n Footer: " + footerOffsetTop)
 }
 

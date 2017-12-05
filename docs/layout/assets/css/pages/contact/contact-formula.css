@@ -1,10 +1,10 @@
 .contact-formula {
     margin: 50px 0 20px 0;
-    overflow: auto;
 }
 
 .contact-formula__field {
     margin-bottom: 10px;
+    overflow: auto;
 }
 
 .contact-formula__field__desc {
@@ -18,5 +18,5 @@
 }
 
 .contact-formula__submit {
-    margin-top: 20px;
+    margin-top: 10px;
 }
