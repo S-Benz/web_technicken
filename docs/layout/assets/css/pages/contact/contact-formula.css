@@ -1,5 +1,6 @@
 .contact-formula {
     margin: 50px 0 20px 0;
+    overflow: auto;
 }
 
 .contact-formula__field {
@@ -8,9 +9,14 @@
 
 .contact-formula__field__desc {
    display: inline-block;
+   vertical-align: top;
    width: 30%;
 }
 
 .contact-formula__field__input {
     display: inline-block;
+}
+
+.contact-formula__submit {
+    margin-top: 20px;
 }
