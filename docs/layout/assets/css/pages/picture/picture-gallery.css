@@ -1,5 +1,25 @@
 .picture-gallery {
+    position: relative;
     margin-top: 50px;
+    border-top: 1px solid black;
+}
+
+.picture-gallery__trigger {
+    position: absolute;
+    cursor: pointer;
+    top: -25px;
+    right: 0;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.picture-gallery__trigger--rotated {
+    padding-top: 0;
+    transform: rotate(180deg);
+}
+
+.picture-gallery__frame {
+    display: none;
 }
 
 .picture-gallery__element {

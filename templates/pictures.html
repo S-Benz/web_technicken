@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="../docs/layout/assets/css/main.css"/>
     <link rel="stylesheet" href="../docs/layout/assets/css/pictures.css"/>
-    <script type="text/javascript" src="../docs/layout/assets/js/navigation.js"></script>
-    <script type="text/javascript" src="../docs/layout/assets/js/sidebar.js"></script>
-    <script type="text/javascript" src="../docs/layout/assets/js/footer.js"></script>
+    <script src="../docs/layout/assets/js/navigation.js"></script>
+    <script src="../docs/layout/assets/js/sidebar.js"></script>
+    <script src="../docs/layout/assets/js/footer.js"></script>
+    <script src="../docs/layout/assets/js/pages/picture/picture-gallery.js"></script>
     <title>Gallerie</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
 </header>
 <div class="nav__container">
     <nav>
-        <div class="nav__inner">
+        <div class="nav__inner" id="navInner">
             <ul class="nav__inner__container">
                 <li class="nav__inner__container__element">
                     <a class="nav__inner__container__element__link" href="../index.html">Home</a>
@@ -36,9 +37,9 @@
     </nav>
 </div>
 <main class="main-stage">
-    <div class="content">
-        <section class="content__sidebar" onclick="triggerSidebarFrame('[sidebarFrame]')">
-            <div class="content__sidebar__frame" sidebarFrame>
+    <div class="content" id="content">
+        <aside class="content__sidebar" onclick="triggerSidebarFrame('[sidebarFrame]')" id="contentSidebar">
+            <div class="content__sidebar__frame" id="sidebarFrame">
                 <div class="content__sidebar__element">
                     <a class="content__sidebar__element__link" href="faq.html">FAQ</a>
                 </div>
@@ -46,26 +47,32 @@
                     <a class="content__sidebar__element__link" href="impressum.html">Impressum</a>
                 </div>
             </div>
-        </section>
-        <article class="content__text">
+        </aside>
+        <article class="content__text" id="contentText">
             <h2 class="content__text__heading">Glückliche Katzen</h2>
             <p>Hier finden sie eine Bildergallerie mit Katzen die über uns einen neuen Besitzer gefunden haben!</p>
             <div class="picture-gallery">
-                <figure class="picture-gallery__element__container">
-                    <img class="picture-gallery__element" src="../docs/layout/assets/img/ocicat_paul.jpg"
-                         alt="Ocicat Kater Paul (1 Jahr)">
-                    <figcaption class="picture-gallery__element__desc">Ocicat Kater Paul (1 Jahr)</figcaption>
-                </figure>
-                <figure class="picture-gallery__element__container">
-                    <img class="picture-gallery__element" src="../docs/layout/assets/img/bengal_mira.jpg"
-                         alt="Bengal Katze Mira (8 Monate)">
-                    <figcaption class="picture-gallery__element__desc">Bengal Katze Mira (8 Monate)</figcaption>
-                </figure>
-                <figure class="picture-gallery__element__container">
-                    <img class="picture-gallery__element" src="../docs/layout/assets/img/siam_felix.jpg"
-                         alt="Siam Kater Felix (1 Jahr 4 Monate)">
-                    <figcaption class="picture-gallery__element__desc">Siam Kater Felix (1 Jahr 4 Monate)</figcaption>
-                </figure>
+                <div class="picture-gallery__trigger picture-gallery__trigger--rotated" onclick="openPictureGallery()">
+                    ^
+                </div>
+                <div class="picture-gallery__frame" id="galleryFrame">
+                    <figure class="picture-gallery__element__container">
+                        <img class="picture-gallery__element" src="../docs/layout/assets/img/ocicat_paul.jpg"
+                             alt="Ocicat Kater Paul (1 Jahr)">
+                        <figcaption class="picture-gallery__element__desc">Ocicat Kater Paul (1 Jahr)</figcaption>
+                    </figure>
+                    <figure class="picture-gallery__element__container">
+                        <img class="picture-gallery__element" src="../docs/layout/assets/img/bengal_mira.jpg"
+                             alt="Bengal Katze Mira (8 Monate)">
+                        <figcaption class="picture-gallery__element__desc">Bengal Katze Mira (8 Monate)</figcaption>
+                    </figure>
+                    <figure class="picture-gallery__element__container">
+                        <img class="picture-gallery__element" src="../docs/layout/assets/img/siam_felix.jpg"
+                             alt="Siam Kater Felix (1 Jahr 4 Monate)">
+                        <figcaption class="picture-gallery__element__desc">Siam Kater Felix (1 Jahr 4 Monate)
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </article>
     </div>

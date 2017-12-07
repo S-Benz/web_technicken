@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="docs/layout/assets/css/main.css"/>
-    <script type="text/javascript" src="../docs/layout/assets/js/navigation.js"></script>
-    <script type="text/javascript" src="docs/layout/assets/js/sidebar.js"></script>
-    <script type="text/javascript" src="docs/layout/assets/js/footer.js"></script>
+    <script src="../docs/layout/assets/js/navigation.js"></script>
+    <script src="docs/layout/assets/js/sidebar.js"></script>
+    <script src="docs/layout/assets/js/footer.js"></script>
     <title>Home</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
     <h1 class="header__title">Catarando</h1>
 </header>
 <nav>
-    <div class="nav__inner">
+    <div class="nav__inner" id="navInner">
         <div class="nav__inner__icon">
         </div>
         <ul class="nav__inner__container">
@@ -35,9 +35,9 @@
     </div>
 </nav>
 <main class="main-stage">
-    <div class="content">
-        <section class="content__sidebar" onclick="triggerSidebarFrame('[sidebarFrame]')">
-            <div class="content__sidebar__frame" sidebarFrame>
+    <div class="content" id="content">
+        <aside class="content__sidebar" onclick="triggerSidebarFrame('[sidebarFrame]')" id="contentSidebar">
+            <div class="content__sidebar__frame" id="sidebarFrame">
                 <div class="content__sidebar__element">
                     <a class="content__sidebar__element__link" href="templates/faq.html">FAQ</a>
                 </div>
@@ -45,8 +45,8 @@
                     <a class="content__sidebar__element__link" href="templates/impressum.html">Impressum</a>
                 </div>
             </div>
-        </section>
-        <article class="content__text">
+        </aside>
+        <article class="content__text" id="contentText">
             <h2 class="content__text__heading">Unsere Leistungen</h2>
             <p>Catarando ist die Nummer 1 wenn es um Katzenhandel unter Personen geht.</p>
             <p>Wir sind für sie genau die richtige Adresse wenn sie entweder eine Katze verkaufen oder kaufen möchten.</p>

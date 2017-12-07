@@ -1,7 +1,7 @@
 function sortTable() {
-    var table = document.querySelector('[customerTable]');
+    var table = document.getElementById('customerTable');
     var rows = table.getElementsByTagName('tr');
-    var tbody = document.querySelector('[sortBody]');
+    var tbody = document.getElementById('tableBody');
     var switchRows = true;
 
     while (switchRows) {

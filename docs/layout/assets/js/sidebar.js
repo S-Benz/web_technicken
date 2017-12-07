@@ -2,7 +2,7 @@ window.addEventListener('resize', setSidebar);
 
 //Display Sidebar at certain screen width
 function setSidebar(){
-    var sideBar = document.querySelector('[sidebarFrame');
+    var sideBar = document.getElementById('sidebarFrame');
 
     if(screen.width >= 768){
         sideBar.style.display = 'block';

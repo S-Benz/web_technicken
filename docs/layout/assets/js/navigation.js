@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('resize', stickyNav);
 
     function stickyNav() {
-        var nav = document.querySelector('.nav__inner');
-        var contentText = document.querySelector('.content__text');
-        var content = document.querySelector('.content');
-        var sidebar = document.querySelector('.content__sidebar');
+        var nav = document.getElementById('navInner');
+        var contentText = document.getElementById('contentText');
+        var content = document.getElementById('content');
+        var sidebar = document.getElementById('contentSidebar');
         var headerHeight = document.querySelector('header').offsetHeight;
         var navHeight = nav.offsetHeight;
         var stickyTriggerHeight = headerHeight + navHeight;
