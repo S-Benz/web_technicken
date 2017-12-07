@@ -3,7 +3,16 @@ function sortTable() {
     var rows = table.getElementsByTagName('tr');
     var tbody = document.getElementById('tableBody');
     var switchRows = true;
+    var tmpArray = [];
 
+    for(var j = 1; j < rows.length; j++) {
+        tmpArray.push([rows[j].getElementsByTagName('td')[1].innerHTML,j]);
+    }
+
+    tmpArray.sort();
+    console.log(tmpArray);
+
+    /*
     while (switchRows) {
         for (var i = 1; i < (rows.length - 1) ; i++) {
             switchRows = false;
@@ -16,5 +25,5 @@ function sortTable() {
                 break;
             }
         }
-    }
+    }*/
 }
