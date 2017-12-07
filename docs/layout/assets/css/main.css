@@ -12,6 +12,7 @@ body {
 
 .main-stage{
     width: 100%;
+    height: auto;
     position: relative;
     flex-grow: 1;
     padding-bottom: 20px;

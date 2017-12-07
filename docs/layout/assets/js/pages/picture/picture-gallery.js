@@ -9,8 +9,6 @@ function openPictureGallery() {
     } else {
         pictureFrame.style.display = 'none';
         pictureFrameTrigger.classList.add(pictureFrameTriggerClass);
-        //TODO: FIX
-        location.reload();
     }
     positionFooter();
 }
