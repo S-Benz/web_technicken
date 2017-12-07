@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', stickyNav);
     window.addEventListener('resize', stickyNav);
 
+    /**
+     * Makes the navbar sticky
+     */
     function stickyNav() {
         var nav = document.getElementById('navInner');
         var contentText = document.getElementById('contentText');
@@ -11,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
         var navHeight = nav.offsetHeight;
         var stickyTriggerHeight = headerHeight + navHeight;
 
-
+        /*
+            Make the navbar sticky after scrolling past it
+         */
         if(window.pageYOffset >= stickyTriggerHeight) {
             nav.style.position = 'fixed';
             nav.style.top = 0;
@@ -30,6 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
         }
+
+        /*
+            Unstick the navbar after scrolling to the top
+         */
         if(window.pageYOffset < stickyTriggerHeight) {
             nav.style.position = 'relative';
             if(window.outerWidth  < 768) {

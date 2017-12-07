@@ -3,6 +3,9 @@ function openPictureGallery() {
     var pictureFrameTrigger = document.querySelector('[onclick="openPictureGallery()"]');
     var pictureFrameTriggerClass = 'picture-gallery__trigger--rotated';
 
+    /**
+     * Fade in or Fadeout of the gallery based on its current state
+     */
     if (getComputedStyle(pictureFrame).display === 'none') {
         pictureFrame.style.display = 'block';
         pictureFrameTrigger.classList.remove(pictureFrameTriggerClass);
@@ -10,5 +13,6 @@ function openPictureGallery() {
         pictureFrame.style.display = 'none';
         pictureFrameTrigger.classList.add(pictureFrameTriggerClass);
     }
+    //Adjust footer position afterwards
     positionFooter();
 }

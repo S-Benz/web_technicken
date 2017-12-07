@@ -4,6 +4,8 @@ window.addEventListener('resize', setSidebar);
 function setSidebar(){
     var sideBar = document.getElementById('sidebarFrame');
 
+
+    //Display sidebar next to main content if the screensize is big enough
     if(screen.width >= 768){
         sideBar.style.display = 'block';
     } else {
@@ -11,7 +13,7 @@ function setSidebar(){
     }
 }
 
-//Trigger sideBar when clicking on parent button
+//Fadein the sidebar on a mobile view when the burger button is clicked
 function triggerSidebarFrame(ele) {
     var screenWidth = screen.width;
     var maxWidth = 768;
