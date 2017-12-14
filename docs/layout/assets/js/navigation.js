@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', stickyNav);
     window.addEventListener('resize', stickyNav);
 
@@ -17,18 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
         /*
             Make the navbar sticky after scrolling past it
          */
-        if(window.pageYOffset >= stickyTriggerHeight) {
+        if (window.pageYOffset >= stickyTriggerHeight) {
             nav.style.position = 'fixed';
             nav.style.top = 0;
             nav.style.width = "100%";
             sidebar.style.position = 'fixed';
             contentText.style.marginLeft = 0;
-            if(window.outerWidth  < 768) {
+            if (window.outerWidth < 768) {
                 sidebar.style.top = "15px";
             } else {
                 sidebar.style.top = navHeight + "px";
                 contentText.style.marginLeft = "30%";
-                if(window.outerWidth >= 1200) {
+                if (window.outerWidth >= 1200) {
                     nav.style.width = "1200px";
                     sidebar.style.width = (content.offsetWidth * 0.3) + "px";
                 }
@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", function() {
         /*
             Unstick the navbar after scrolling to the top
          */
-        if(window.pageYOffset < stickyTriggerHeight) {
+        if (window.pageYOffset < stickyTriggerHeight) {
             nav.style.position = 'relative';
-            if(window.outerWidth  < 768) {
+            if (window.outerWidth < 768) {
                 sidebar.style.position = 'absolute';
                 sidebar.style.top = "-55px";
             } else {

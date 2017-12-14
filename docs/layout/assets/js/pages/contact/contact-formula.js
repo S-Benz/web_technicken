@@ -11,10 +11,10 @@ function validateForm() {
      * If one matches the regex then display an error message
      * Else display a passed message
      */
-    if(nameRe.test(name) || nameRe.test(prename)){
+    if (nameRe.test(name) || nameRe.test(prename)) {
         res = false;
         alert("Bitte keine Sonderzeichen im Namen/Vornamen verwenden!");
-    }else {
+    } else {
         res = true;
         alert("Kontaktformular wurde erfolgreich abgeschickt!");
     }

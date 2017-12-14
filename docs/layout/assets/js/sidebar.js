@@ -1,12 +1,12 @@
 window.addEventListener('resize', setSidebar);
 
 //Display Sidebar at certain screen width
-function setSidebar(){
+function setSidebar() {
     var sideBar = document.getElementById('sidebarFrame');
 
 
     //Display sidebar next to main content if the screensize is big enough
-    if(screen.width >= 768){
+    if (screen.width >= 768) {
         sideBar.style.display = 'block';
     } else {
         sideBar.style.display = 'none';

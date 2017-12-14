@@ -16,7 +16,7 @@ function positionFooter() {
     var diff = mainOffsetTop - footerOffsetTop;
 
     //If the footer laps over the main element reposition the footer
-    if(diff > 0) {
+    if (diff > 0) {
         footer.style.bottom = "-" + diff + "px";
     }
 }
