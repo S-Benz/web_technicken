@@ -9,7 +9,9 @@ function setSidebar() {
     if (screen.width >= 768) {
         sideBar.style.display = 'block';
     } else {
-        sideBar.style.display = 'none';
+        if(getComputedStyle(sideBar).display  === 'block') {
+            sideBar.style.display = 'none';
+        }
     }
 }
 
@@ -19,9 +21,9 @@ function triggerSidebarFrame(ele) {
     var maxWidth = 768;
 
     if (screenWidth < maxWidth) {
-        var sidebarFrame = document.querySelector(ele);
+        var sidebarFrame = document.getElementById(ele);
 
-        if (sidebarFrame.style.display === 'none') {
+        if (getComputedStyle(sidebarFrame).display === 'none') {
             sidebarFrame.style.display = 'block';
         } else {
             sidebarFrame.style.display = 'none';
